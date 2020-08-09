@@ -1,16 +1,16 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class linear_search {
-    public static void main(String[] args){
-        Scanner sc = new Scanner( System.in );
+public class linear_Search {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int[] a = {12, 4, 7, 23, 66, 45};
-        System.out.println( Arrays.toString( a ) );
-        System.out.println( "Enter the value you want to search" );
+        System.out.println(Arrays.toString(a));
+        System.out.println("Enter the value you want to search");
         int search_value = sc.nextInt();
-        int search_index = linearSearch( a, search_value );
-        if(search_index == -1)
-            System.out.println( "not found" );
+        int search_index = linearSearch(a, search_value);
+        if (search_index == -1)
+            System.out.println("not found");
         else
             System.out.println( search_index );
     }
